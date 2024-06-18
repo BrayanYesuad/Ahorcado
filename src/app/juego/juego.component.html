@@ -1,0 +1,42 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<div class="container">
+  <h1 >JUEGO DEL AHORCADO</h1>
+  <h2>Adivina la palabra</h2>
+
+  <div class="game-board">
+    <div class="word-display">
+      <span *ngFor="let letter of palabraVisualizada">{{ letter }}</span>
+    </div>
+
+    <div class="guesses-remaining">
+      Intentos restantes: {{ intentosRestantes }}
+    </div>
+
+    <div class="pista">
+      {{ pista }}
+    </div>
+
+    <div class="letter-input">
+      <input type="text" [(ngModel)]="letraIngresada" maxlength="1" />
+      <button (click)="hacerIntento()">Adivinar</button>
+    </div>
+
+    <div class="result-display">
+      <h3>{{resultadoJuego }}</h3>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    Desarrollado por: BRAYAN YESUAD ROMERO LOPEZ.<br>
+    Profesor encargado: ALEX AUGUSTO MUÑOZ ARRIETA.
+  </p>
+</footer>
+</body>

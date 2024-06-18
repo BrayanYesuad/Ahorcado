@@ -1,0 +1,114 @@
+
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+h1{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  font-weight: bold; /* don't forget to set a duration! */
+}
+
+/* Estilos del tablero de juego */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: green;
+}
+.pista{
+  animation:fadeInUp;
+  animation-duration: 4s;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.word-display {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.guesses-remaining {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.letter-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.letter-input input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 3rem;
+  text-align: center;
+}
+
+.letter-input button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.letter-input button:hover {
+  background-color: #0056b3;
+}
+
+.result-display {
+  font-size:1.5em;
+  font-weight: bold;
+  color: #4caf50;
+  animation:zoomOut;
+  animation-duration: 5s;
+
+}
+.hint {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+footer p{
+  margin: 0;
+}
